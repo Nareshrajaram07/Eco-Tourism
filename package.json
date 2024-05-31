@@ -1,0 +1,26 @@
+{
+  "name": "Turismo",
+  "version": "1.0.0",
+  "description": "Turismo reponsive website build using HTML5, CSS3 and Javascript. The complete layout of the page is build using grid layout and flexbox with some cool animations",
+  "main": "index.html",
+  "scripts": {
+    "watch:sass": "node-sass sass/main.scss css/style.css -w",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.css -o css/style.css",
+    "parcel": "parcel build index.html -d dist",
+    "build": "npm run prefix:css && npm run parcel",
+    "dev": "parcel index.html"
+  },
+  "author": "Manoranjan",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "node-sass": "^5.0.0",
+    "parcel": "^2.0.0-beta.2",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^8.2.13",
+    "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {
+    "aos": "^3.0.0-beta.6"
+  }
+}

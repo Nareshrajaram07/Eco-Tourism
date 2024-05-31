@@ -1,0 +1,21 @@
+.section-about {
+  padding: var(--section-padding);
+}
+
+.about-box {
+  display: grid;
+  grid-template-columns: repeat(
+    var(--two-col-layout),
+    minmax(min-content, 1fr)
+  );
+  gap: 2rem;
+
+  &__heading {
+    padding: 4rem 0;
+  }
+
+  &__content {
+    padding: 4rem 2.4rem;
+    background-color: rgba(73, 202, 228, 0.1);
+  }
+}

@@ -1,0 +1,69 @@
+.section-review {
+  background-color: var(--color-gray-light);
+  padding: var(--section-padding);
+}
+
+.review-header {
+  text-align: center;
+  margin-bottom: 10rem;
+}
+
+.review-cards {
+  display: grid;
+  grid-template-columns: repeat(
+    var(--two-col-layout),
+    minmax(min-content, 1fr)
+  );
+  row-gap: 10rem;
+  column-gap: 5rem;
+  justify-items: center;
+}
+
+.r-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 40rem;
+  padding: 0 2.4rem 2rem 2.4rem;
+  position: relative;
+
+  & > *:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+
+  &:hover {
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  }
+
+  &__img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-top: -5rem;
+  }
+
+  &__name {
+    font-weight: 700;
+  }
+
+  &__description {
+    text-align: center;
+  }
+  &__rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.quot {
+  font-size: 7rem;
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-blue);
+}

@@ -1,0 +1,38 @@
+.section-offer {
+  padding: var(--section-padding);
+  background: url('../img/offer-img.jpg') fixed no-repeat center;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 60, 136, 0.5);
+    z-index: -1;
+  }
+}
+.offer-box {
+  display: grid;
+  grid-template-columns: repeat(
+    var(--two-col-layout),
+    minmax(min-content, 1fr)
+  );
+  gap: 5rem;
+  justify-items: center;
+  align-items: center;
+
+  &__percentage {
+    font-size: clamp(10rem, 20vw, 15rem);
+  }
+  &__content {
+    display: grid;
+    gap: 2rem;
+    justify-items: flex-start;
+  }
+}

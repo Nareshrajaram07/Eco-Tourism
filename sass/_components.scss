@@ -1,0 +1,112 @@
+.btn {
+  text-transform: capitalize;
+  padding: 1.3rem;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: var(--color-blue-lighter-2);
+  color: #000;
+  border: none;
+  transition: background-color 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-blue-lighter-1);
+  }
+
+  &--drop-shadow {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  &--secondary {
+    border: 1.5px solid var(--color-blue-lighter-2);
+    background-color: transparent;
+  }
+}
+
+input[type='text'] {
+  padding: 1.3rem 2.5rem;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 1.6rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.custom-date {
+  position: relative;
+  margin-top: 1rem;
+
+  & .calender-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5rem;
+    height: 100%;
+    background-color: var(--color-gray-dark);
+    border: 1px solid var(--color-blue-lighter-2);
+    padding: 1rem;
+    pointer-events: none;
+  }
+
+  input[type='date'] {
+    padding: 0.8rem;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: inherit;
+    background-color: var(--color-gray-light);
+    border: 1px solid var(--color-blue-lighter-2);
+    cursor: pointer;
+    line-height: inherit;
+    outline: none;
+    width: 100%;
+  }
+}
+
+.custom-select {
+  position: relative;
+  margin-top: 1rem;
+
+  & select {
+    background-color: var(--color-gray-light);
+    border: 1px solid var(--color-blue-lighter-2);
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    line-height: inherit;
+    outline: none;
+  }
+
+  & .arrow {
+    background-color: var(--color-gray-dark);
+    border: 1px solid var(--color-blue-lighter-2);
+    width: 5rem;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    pointer-events: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid transparent;
+      border-top: 1rem solid var(--color-blue-lighter-2);
+    }
+  }
+}

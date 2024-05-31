@@ -1,0 +1,53 @@
+:root {
+  --color-blue: #023c88;
+  --color-blue-lighter-1: #00b3d6;
+  --color-blue-lighter-2: #49cae4;
+
+  --color-gray-light: #f9fafb;
+  --color-gray-dark: #e9ecef;
+
+  --section-padding: clamp(4rem, 10vw, 12rem) 0rem;
+
+  //GRID
+  --two-col-layout: 2;
+  --three-col-layout: 3;
+
+  @media only screen and (max-width: 56.25em) {
+    --two-col-layout: 1;
+  }
+  @media only screen and (max-width: 59em) {
+    --three-col-layout: 2;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    --three-col-layout: 1;
+  }
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: clamp(50rem, 85vw, 114rem);
+  height: 100%;
+  padding: 0 2.4rem;
+  margin: 0 auto;
+}
